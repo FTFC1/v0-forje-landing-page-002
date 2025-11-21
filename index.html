@@ -291,14 +291,40 @@
         }
 
         .brand-logo {
-            height: 32px;
             width: auto;
             filter: grayscale(100%) opacity(0.6);
             transition: all 0.3s ease;
+            /* Default height removed, set individually */
         }
 
         .brand-logo:hover {
             filter: grayscale(0%) opacity(1);
+        }
+
+        /* Optical Balancing */
+        .brand-logo[alt="Lacoste"] {
+            height: 45px;
+            /* Increased for detail */
+        }
+
+        .brand-logo[alt="Tommy Hilfiger"] {
+            height: 22px;
+            /* Reduced to prevent blockiness */
+        }
+
+        .brand-logo[alt="Nike"] {
+            height: 28px;
+            /* Reduced width impact */
+        }
+
+        .brand-logo[alt="Levi's"] {
+            height: 40px;
+            /* Increased for legibility */
+        }
+
+        .brand-logo[alt="Adidas"] {
+            height: 38px;
+            /* Standard balanced height */
         }
 
         .brand-name {
