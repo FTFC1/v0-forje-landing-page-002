@@ -265,19 +265,20 @@
         /* Trust Anchor */
         .trust-anchor {
             margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             text-align: left;
-            /* Left align */
+            /* Left aligned */
+            padding-left: 0;
+            /* Ensure no extra padding */
         }
 
         .trust-title {
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 12px;
+            /* Standardized to match section-label */
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            margin-bottom: 24px;
+            letter-spacing: 1.5px;
+            color: var(--primary);
+            margin-bottom: 30px;
         }
 
         .brand-row {
@@ -285,9 +286,19 @@
             gap: 40px;
             align-items: center;
             justify-content: flex-start;
-            /* Left align */
+            /* Left align brands */
             flex-wrap: wrap;
-            opacity: 0.7;
+        }
+
+        .brand-logo {
+            height: 32px;
+            width: auto;
+            filter: grayscale(100%) opacity(0.6);
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            filter: grayscale(0%) opacity(1);
         }
 
         .brand-name {
@@ -565,11 +576,11 @@
         <div class="trust-anchor">
             <h3 class="trust-title">Built on Real Retail Experience</h3>
             <div class="brand-row">
-                <span class="brand-name brand-lacoste">LACOSTE</span>
-                <span class="brand-name brand-tommy">TOMMY HILFIGER</span>
-                <span class="brand-name brand-nike">NIKE</span>
-                <span class="brand-name brand-levis">LEVI'S</span>
-                <span class="brand-name brand-adidas">adidas</span>
+                <img src="assets/logos/lacoste.svg" alt="Lacoste" class="brand-logo">
+                <img src="assets/logos/tommy.svg" alt="Tommy Hilfiger" class="brand-logo">
+                <img src="assets/logos/nike.svg" alt="Nike" class="brand-logo">
+                <img src="assets/logos/levis.svg" alt="Levi's" class="brand-logo">
+                <img src="assets/logos/adidas.svg" alt="Adidas" class="brand-logo">
             </div>
         </div>
 
@@ -654,36 +665,57 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Process & Operations (Restored) -->
+            <div class="service-item" onclick="toggleService(this)">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Process & Operations</h3>
+                    <div class="service-toggle">+</div>
+                </div>
+                <div class="service-content">
+                    <p>Streamline your operations for maximum efficiency and profitability.</p>
+                    <ul>
+                        <li>Inventory Planning & Management</li>
+                        <li>Supply Chain Optimization</li>
+                        <li>SOPs & Workflow Automation</li>
+                        <li>Omnichannel Integration</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <section class="why-us">
             <h2>Why Work with FORJE?</h2>
             <div class="why-grid">
                 <div class="why-item">
-                    <p>Global best practices adapted for the unique West African market context.</p>
+                    <h3>Deep Local Expertise</h3>
+                    <p>We understand the nuances of the West African consumer and retail landscape.</p>
                 </div>
                 <div class="why-item">
-                    <h4>Proven Track Record</h4>
-                    <p>Success with luxury, lifestyle, and high-growth brands across the region.</p>
+                    <h3>Global Standards</h3>
+                    <p>We bring international best practices tailored to the local market context.</p>
                 </div>
                 <div class="why-item">
-                    <h4>Multi-Disciplinary</h4>
-                    <p>Retail, Tech, HR, and Consulting expertise all under one roof.</p>
+                    <h3>End-to-End Support</h3>
+                    <p>From strategy to execution, we are with you every step of the way.</p>
                 </div>
                 <div class="why-item">
-                    <h4>Results-Driven</h4>
-                    <p>Measurable improvements in revenue, operations, and customer experience.</p>
+                    <h3>Proven Track Record</h3>
+                    <p>Trusted by leading global and local brands to deliver results.</p>
                 </div>
             </div>
         </section>
 
         <footer>
-            <div class="footer-top">
-                <div class="availability-badge">
-                    <div class="pulse-dot"></div>
-                    Accepting new partnerships for Q1 2026 (2 Slots Remaining)
-                </div>
-            </div>
             <div class="footer-bottom">
                 <div>&copy; 2025 FORJE. All rights reserved.</div>
                 <div class="contact-group">
