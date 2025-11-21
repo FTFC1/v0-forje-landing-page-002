@@ -375,6 +375,99 @@
             }
         }
 
+        /* Trust Anchor */
+        .trust-anchor {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .trust-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .brand-row {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .brand-row:hover {
+            opacity: 1;
+        }
+
+        .brand-name {
+            font-family: 'Times New Roman', serif;
+            /* Elegant contrast */
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        /* Velvet Rope Badge */
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(147, 51, 234, 0.08);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(147, 51, 234, 0.1);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #22c55e;
+            /* Green for 'open' */
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+            }
+        }
+
+        /* Mobile adjustments for new elements */
+        @media (max-width: 640px) {
+            .brand-row {
+                gap: 24px;
+                justify-content: flex-start;
+            }
+
+            .brand-name {
+                font-size: 20px;
+            }
+        }
+
         /* Desktop overrides for accordion structure */
         @media (min-width: 641px) {
             .service-toggle {
@@ -420,6 +513,17 @@
                 operations, and elevate customer experiences through strategy, talent, and training.
             </p>
         </section>
+
+        <!-- Trust Anchor -->
+        <div class="trust-anchor">
+            <span class="trust-label">Trusted by Global Leaders</span>
+            <div class="brand-row">
+                <span class="brand-name">Lacoste</span>
+                <span class="brand-name">Dune London</span>
+                <span class="brand-name">Gant</span>
+                <span class="brand-name">Superdry</span>
+            </div>
+        </div>
 
         <span class="section-label">Our Expertise</span>
 
@@ -544,6 +648,10 @@
         </section>
 
         <footer>
+            <div class="availability-badge">
+                <span class="pulse-dot"></span>
+                Accepting new partnerships for Q1 2026 (2 Slots Remaining)
+            </div>
             <div>&copy; 2025 FORJE. All rights reserved.</div>
             <div class="contact-group">
                 <div class="contact-item">
