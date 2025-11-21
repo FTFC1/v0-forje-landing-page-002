@@ -208,11 +208,26 @@
         /* Footer */
         footer {
             border-top: 1px solid rgba(0, 0, 0, 0.05);
-            padding-top: 30px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 30px;
             font-size: 13px;
             color: var(--text-muted);
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .contact-group {
