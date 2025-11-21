@@ -252,7 +252,8 @@
             margin-bottom: 60px;
             padding-bottom: 40px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            text-align: center;
+            text-align: left;
+            /* Left align */
         }
 
         .trust-title {
@@ -268,7 +269,8 @@
             display: flex;
             gap: 40px;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            /* Left align */
             flex-wrap: wrap;
             opacity: 0.7;
         }
@@ -326,7 +328,6 @@
             border-radius: 20px;
             font-size: 12px;
             font-weight: 600;
-            margin-bottom: 24px;
             border: 1px solid rgba(147, 51, 234, 0.1);
         }
 
@@ -674,20 +675,27 @@
         </section>
 
         <footer>
-            <div class="availability-badge">
-                <span class="pulse-dot"></span>
-                Accepting new partnerships for Q1 2026 (2 Slots Remaining)
+            <div class="footer-top">
+                <div class="availability-badge">
+                    <div class="pulse-dot"></div>
+                    Accepting new partnerships for Q1 2026 (2 Slots Remaining)
+                </div>
             </div>
-            <div>&copy; 2025 FORJE. All rights reserved.</div>
-            <div class="contact-group">
-                <div class="contact-item">
-                    <span class="contact-icon">●</span> +234 908 328 2287
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">●</span> commercial@forje.org
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">●</span> Lekki Phase 1, Lagos
+            <div class="footer-bottom">
+                <div>&copy; 2025 FORJE. All rights reserved.</div>
+                <div class="contact-group">
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9679;</div>
+                        +234 908 328 2287
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9679;</div>
+                        commercial@forje.org
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9679;</div>
+                        Lekki Phase 1, Lagos
+                    </div>
                 </div>
             </div>
         </footer>
