@@ -344,6 +344,8 @@
             font-size: 12px;
             font-weight: 600;
             border: 1px solid rgba(147, 51, 234, 0.1);
+            margin-top: 24px;
+            /* Added spacing for hero placement */
         }
 
         .pulse-dot {
@@ -553,6 +555,10 @@
                 We are a boutique retail-strategy consultancy partnering with brands to unlock revenue, streamline
                 operations, and elevate customer experiences through strategy, talent, and training.
             </p>
+            <div class="availability-badge hero-badge">
+                <div class="pulse-dot"></div>
+                Accepting new partnerships for Q1 2026 (2 Slots Remaining)
+            </div>
         </section>
 
         <!-- Trust Anchor -->
@@ -569,39 +575,43 @@
 
         <span class="section-label">Our Expertise</span>
 
+        <!-- Services Section - Accordion on Mobile -->
         <div class="services-grid">
-            <!-- Consulting -->
+            <!-- Strategic Consulting -->
             <div class="service-item" onclick="toggleService(this)">
                 <div class="service-header">
                     <div class="service-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         </svg>
                     </div>
-                    <h3>Retail Strategy Consulting</h3>
+                    <h3>Strategic Consulting</h3>
                     <div class="service-toggle">+</div>
                 </div>
                 <div class="service-content">
+                    <p>Market entry strategy, financial modeling, and partnership structuring. We help international
+                        brands
+                        successfully expand into West African markets.</p>
                     <ul>
-                        <li>Market entry & expansion strategies</li>
-                        <li>Commercial turnarounds & revenue optimization</li>
-                        <li>Assortment planning & visual merchandising</li>
-                        <li>Customer experience design</li>
+                        <li>Market Entry & Expansion Planning</li>
+                        <li>Commercial Turnarounds & Revenue Optimization</li>
+                        <li>Assortment Planning & Merchandising Strategy</li>
+                        <li>Customer Experience (CX) Design</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Recruitment -->
+            <!-- Talent Acquisition -->
             <div class="service-item" onclick="toggleService(this)">
                 <div class="service-header">
                     <div class="service-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                     </div>
@@ -609,59 +619,38 @@
                     <div class="service-toggle">+</div>
                 </div>
                 <div class="service-content">
+                    <p>We don't just fill roles; we build high-performance teams. Our deep network ensures you get the
+                        right people for your retail operations.</p>
                     <ul>
-                        <li>Pre-vetted talent pool for premium retail</li>
-                        <li>Executive search & head office roles</li>
-                        <li>Tailored recruitment solutions</li>
-                        <li>Structured onboarding programs</li>
+                        <li>Pre-vetted Talent Pool for Premium Retail</li>
+                        <li>Executive Search & Head Office Roles</li>
+                        <li>Store Operations & Frontline Staffing</li>
+                        <li>Structured Onboarding & Culture Alignment</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Training -->
+            <!-- Training Platform -->
             <div class="service-item" onclick="toggleService(this)">
                 <div class="service-header">
                     <div class="service-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                         </svg>
                     </div>
-                    <h3>Retail Training Academy</h3>
+                    <h3>Training & Development</h3>
                     <div class="service-toggle">+</div>
                 </div>
                 <div class="service-content">
+                    <p>Empower your workforce with industry-standard training. From sales techniques to operational
+                        excellence, we upskill your teams.</p>
                     <ul>
-                        <li>Frontline training for sales associates</li>
-                        <li>Head office training for managers</li>
-                        <li>Industry benchmarking & certification</li>
-                        <li>Hybrid learning (Digital + In-person)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Operations -->
-            <div class="service-item" onclick="toggleService(this)">
-                <div class="service-header">
-                    <div class="service-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path
-                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3>Process & Operations</h3>
-                    <div class="service-toggle">+</div>
-                </div>
-                <div class="service-content">
-                    <ul>
-                        <li>Inventory planning & management</li>
-                        <li>Supply chain optimization</li>
-                        <li>SOPs & workflow automation</li>
-                        <li>Omnichannel integration</li>
+                        <li>Frontline Sales & Service Excellence</li>
+                        <li>Store Management & Leadership Development</li>
+                        <li>Visual Merchandising & Product Knowledge</li>
+                        <li>Retail Math & KPI Management</li>
                     </ul>
                 </div>
             </div>
@@ -671,7 +660,6 @@
             <h2>Why Work with FORJE?</h2>
             <div class="why-grid">
                 <div class="why-item">
-                    <h4>Africa-Focused</h4>
                     <p>Global best practices adapted for the unique West African market context.</p>
                 </div>
                 <div class="why-item">
